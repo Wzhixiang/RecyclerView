@@ -22,4 +22,12 @@ public class MainActivity extends AppCompatActivity {
     public void customViewHolder(View view){
         startActivity(new Intent(this, EmptyRecyclerByViewHolder.class));
     }
+
+    public void customAdapter(View view){
+        startActivity(new Intent(this, CustomAdapterActivity.class));
+    }
+
+    public void customViewWithHF(View view){
+        startActivity(new Intent(this, SupportRecyclerViewWithHF.class));
+    }
 }

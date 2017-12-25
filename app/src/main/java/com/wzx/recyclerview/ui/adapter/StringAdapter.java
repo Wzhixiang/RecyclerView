@@ -1,4 +1,4 @@
-package com.wzx.recyclerview.ui;
+package com.wzx.recyclerview.ui.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

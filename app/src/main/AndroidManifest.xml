@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".ui.EmptyRecyclerByCustomView"/>
         <activity android:name=".ui.EmptyRecyclerByViewHolder"/>
+        <activity android:name=".ui.CustomAdapterActivity"/>
+        <activity android:name=".ui.SupportRecyclerViewWithHF"/>
     </application>
 
 </manifest>

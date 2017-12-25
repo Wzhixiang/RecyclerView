@@ -1,4 +1,4 @@
-package com.wzx.recyclerview.ui;
+package com.wzx.recyclerview.ui.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -22,7 +22,6 @@ public class SupportEmptyAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     private static final int EMPTY_VIEW = 1;
     private static final int NORMAL_VIEW = 0;
 
-
     private List<String> mList;
 
     public SupportEmptyAdapter() {
@@ -43,10 +42,10 @@ public class SupportEmptyAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         if (viewType == NORMAL_VIEW) {
             return new StringViewHolder(
                     LayoutInflater.from(parent.getContext()).inflate(R.layout.item_string, parent, false));
-        } else {
-            return new EmptyViewHolder(
-                    LayoutInflater.from(parent.getContext()).inflate(R.layout.item_empty, parent, false));
         }
+
+        return new EmptyViewHolder(
+                LayoutInflater.from(parent.getContext()).inflate(R.layout.item_empty, parent, false));
     }
 
     @Override

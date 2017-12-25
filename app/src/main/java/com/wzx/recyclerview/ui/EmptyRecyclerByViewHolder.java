@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.wzx.recyclerview.R;
+import com.wzx.recyclerview.ui.adapter.SupportEmptyAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

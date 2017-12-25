@@ -17,4 +17,16 @@
         android:onClick="customViewHolder"
         android:text="通过ViewHolder显示空布局" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="customAdapter"
+        android:text="封装adapter实现header和footer" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="customViewWithHF"
+        android:text="自定义RecyclerView添加header和footer" />
+
 </LinearLayout>

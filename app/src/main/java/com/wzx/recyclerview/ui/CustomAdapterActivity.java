@@ -12,7 +12,7 @@ import com.wzx.recyclerview.R;
 import com.wzx.recyclerview.ui.adapter.StringCustomAdapter;
 
 /**
- * 描述 TODO 定义
+ * 描述 TODO 自定义adapter实现添加多种item
  * Created by 王治湘 on 2017/12/23.
  * version 1.0
  */

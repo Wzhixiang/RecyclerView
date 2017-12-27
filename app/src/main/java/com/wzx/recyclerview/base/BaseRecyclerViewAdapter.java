@@ -19,8 +19,8 @@ import java.util.List;
  */
 
 public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<BaseRecyclerViewHolder> {
-    protected static final int TYPE_HEADER = 1000000;
-    protected static final int TYPE_FOOTER = 2000000;
+    protected static final int TYPE_HEADER = -100000;
+    protected static final int TYPE_FOOTER = -200000;
 
     private Context mContext;
     private List<T> mDataList;
@@ -93,8 +93,7 @@ public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<Ba
     public int getItemViewType(int position) {
         if (isHeaderView(position)) {
             return mHeaderViews.keyAt(position);
-        }
-        else if (isFooterView(position)) {
+        } else if (isFooterView(position)) {
             return mFooterViews.keyAt(position - getHeadersCount() - getRealCount());
         }
 

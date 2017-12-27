@@ -2,7 +2,6 @@ package com.wzx.recyclerview.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.wzx.recyclerview.R;
 import com.wzx.recyclerview.ui.adapter.StringCustomAdapter;
+import com.wzx.recyclerview.utils.RecyclerView.RecyclerViewHelper;
 
 /**
  * 描述 TODO 自定义adapter实现添加多种item
@@ -45,10 +45,8 @@ public class CustomAdapterActivity extends AppCompatActivity {
                 ViewGroup.LayoutParams.WRAP_CONTENT));
         mAdapter.addFooterView(footerView2);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-//        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-//        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(mAdapter);
+
+        RecyclerViewHelper.initRecyclerViewV(this, recyclerView, true, mAdapter);
     }
 
     public void addItem(View view) {
